@@ -14,8 +14,8 @@ export const createRecipe = async (req, res) => {
     });
 
     await newRecepie.save();
-    recepies.push(newRecepie);
-    console.log(recepies);
+    // recepies.push(newRecepie);
+    // console.log(recepies);
     res.status(201).json({
         status: "Success",
         message: "User created successfully",
